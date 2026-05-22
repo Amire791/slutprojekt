@@ -1,0 +1,222 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+
+    background: #000;
+    color: white;
+
+    overflow-x: hidden;
+
+    animation: fadePage 1s ease;
+}
+
+/* FADE */
+@keyframes fadePage {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* NAV */
+nav {
+    padding: 25px 50px;
+
+    border-bottom: 1px solid #222;
+
+    position: fixed;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO */
+nav h1 {
+    font-size: 28px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+
+    background:
+    url("mercedes huvudbild.jpg")
+    center/cover no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 80px;
+
+    animation: zoom 6s ease forwards;
+}
+
+/* CINEMATIC ZOOM */
+@keyframes zoom {
+
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+/* HERO TEXT */
+.hero-text {
+    max-width: 500px;
+
+    animation: slideIn 1.2s ease;
+}
+
+/* TEXT ANIMATION */
+@keyframes slideIn {
+
+    from {
+        transform: translateX(-60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+/* TITLE */
+.hero-text h2 {
+    font-size: 75px;
+
+    font-weight: 300;
+
+    line-height: 1.1;
+}
+
+/* SUBTITLE */
+.hero-text p {
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    color: #aaa;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: fit-content;
+}
+
+/* BUTTON */
+.hero-btn {
+    display: inline-block;
+
+    width: 260px;
+
+    padding: 14px 35px;
+
+    border: 1px solid white;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    opacity: 0;
+
+    animation: fadeUp 1s ease forwards;
+
+    transition: 0.3s;
+}
+
+/* BUTTON DELAY */
+.hero-btn:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.hero-btn:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+/* BUTTON HOVER */
+.hero-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* BUTTON ANIMATION */
+@keyframes fadeUp {
+
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 20px;  
+    }
+
+    .hero-text h2 {
+        font-size: 48px;
+    }
+
+    .hero-btn {
+        width: 220px;
+    }
+
+}

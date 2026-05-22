@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mercedes SUV</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="bilar.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="CSS/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Mercedes-Benz</h1>
+    </nav>
+
+    <!-- Titel -->
+    <section class="title">
+        <h2>SUV Models</h2>
+        <p>Utforska Mercedes mest populära SUV-modeller</p>
+    </section>
+
+    <!-- Bilar -->
+    <section class="cars">
+
+        <!-- GLC -->
+        <div class="card">
+
+            <a href="GLC.jpg"
+               data-lightbox="cars"
+               data-title="Mercedes GLC">
+
+                <img src="GLC.jpg" alt="Mercedes GLC">
+            </a>
+
+            <div class="info">
+                <h3>GLC</h3>
+
+                <p>
+                    Modern SUV med premium interiör,
+                    avancerad teknik och hög komfort.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- GLE -->
+        <div class="card">
+
+            <a href="GLE.jpg"
+               data-lightbox="cars"
+               data-title="Mercedes GLE">
+
+                <img src="GLE.jpg" alt="Mercedes GLE">
+            </a>
+
+            <div class="info">
+                <h3>GLE</h3>
+
+                <p>
+                    Kraftfull SUV med sportig design
+                    och stark prestanda.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- G-Class -->
+        <div class="card">
+
+            <a href="SUV.jpg"
+               data-lightbox="cars"
+               data-title="Mercedes G-Class">
+
+                <img src="SUV.jpg" alt="Mercedes G-Class">
+            </a>
+
+            <div class="info">
+                <h3>G-Class</h3>
+
+                <p>
+                    Ikonisk offroad SUV med exklusiv
+                    design och extrem styrka.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tillbaka knapp -->
+    <a href="model.html" class="back-btn">Tillbaka</a>
+
+    <!-- Lightbox JS -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Animation -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 300,
+            'fadeDuration': 300,
+            'imageFadeDuration': 300,
+            'wrapAround': true
+        })
+    </script>
+
+</body>
+</html>

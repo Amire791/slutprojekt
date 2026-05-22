@@ -1,0 +1,235 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #000;
+    color: white;
+
+    animation: fadePage 1s ease;
+}
+
+/* Fade */
+@keyframes fadePage {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Nav */
+nav {
+    padding: 25px 50px;
+
+    border-bottom: 1px solid #111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Rubrik */
+nav h1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 28px;
+
+    text-align: center;
+}
+
+/* Title */
+.title {
+    text-align: center;
+
+    padding: 90px 20px 60px;
+
+    animation: slideDown 1s ease;
+}
+
+.title h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.title p {
+    margin-top: 15px;
+
+    color: #777;
+
+    font-size: 18px;
+}
+
+/* Title animation */
+@keyframes slideDown {
+
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+/* Grid */
+.cars {
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 35px;
+
+    padding: 0 60px 90px;
+}
+
+/* Card */
+.card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #111;
+
+    opacity: 0;
+    transform: translateY(40px);
+
+    animation: fadeUp 0.8s ease forwards;
+
+    transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* Delay */
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Card animation */
+@keyframes fadeUp {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Image */
+.card img {
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+/* Info */
+.info {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+
+    padding: 30px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.95),
+        transparent
+    );
+}
+
+.info h3 {
+    font-size: 38px;
+
+    font-weight: 300;
+}
+
+.info p {
+    margin-top: 8px;
+
+    color: #bbb;
+
+    font-size: 18px;
+}
+
+/* Hover */
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.7);
+}
+
+.card:hover img {
+    transform: scale(1.06);
+}
+
+/* Knapp */
+.back-btn {
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto 70px;
+
+    padding: 14px 34px;
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+/* Hover knapp */
+.back-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .title h2 {
+        font-size: 42px;
+    }
+
+    .cars {
+        padding: 20px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mercedes Electric</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bilar.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="CSS/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Mercedes-Benz</h1>
+    </nav>
+
+    <!-- Titel -->
+    <section class="title">
+        <h2>Electric Models</h2>
+        <p>Utforska framtidens elbilar från Mercedes-Benz</p>
+    </section>
+
+    <!-- Bilar -->
+    <section class="cars">
+
+        <!-- EQS -->
+        <div class="card">
+
+            <a href="EQS.jpg"
+               data-lightbox="electric"
+               data-title="Mercedes EQS">
+
+                <img src="EQS.jpg" alt="Mercedes EQS">
+            </a>
+
+            <div class="info">
+                <h3>EQS</h3>
+
+                <p>
+                    Lyxig el-sedan med futuristisk design,
+                    hög komfort och lång räckvidd.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- EQE -->
+        <div class="card">
+
+            <a href="el.jpg"
+               data-lightbox="electric"
+               data-title="Mercedes EQE">
+
+                <img src="el.jpg" alt="Mercedes EQE">
+            </a>
+
+            <div class="info">
+                <h3>EQE</h3>
+
+                <p>
+                    Modern elbil med avancerad teknik
+                    och premium interiör.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- EQS SUV -->
+        <div class="card">
+
+            <a href="EQS SUV.jpg"
+               data-lightbox="electric"
+               data-title="Mercedes EQS SUV">
+
+                <img src="EQS SUV.jpg" alt="Mercedes EQS SUV">
+            </a>
+
+            <div class="info">
+                <h3>EQS SUV</h3>
+
+                <p>
+                    Elektrisk SUV som kombinerar
+                    lyx, kraft och innovation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tillbaka knapp -->
+    <a href="model.html" class="back-btn">Tillbaka</a>
+
+    <!-- Lightbox JS -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Animation -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 300,
+            'fadeDuration': 300,
+            'imageFadeDuration': 300,
+            'wrapAround': true
+        })
+    </script>
+
+</body>
+</html>

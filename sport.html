@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mercedes Sport</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bilar.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="CSS/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Mercedes-Benz</h1>
+    </nav>
+
+    <!-- Titel -->
+    <section class="title">
+        <h2>Sport Models</h2>
+        <p>Utforska Mercedes mest kraftfulla sportbilar</p>
+    </section>
+
+    <!-- Bilar -->
+    <section class="cars">
+
+        <!-- AMG GT -->
+        <div class="card">
+
+            <a href="AMG GT.jpg"
+               data-lightbox="sports"
+               data-title="Mercedes AMG GT">
+
+                <img src="AMG GT.jpg" alt="Mercedes AMG GT">
+            </a>
+
+            <div class="info">
+                <h3>AMG GT</h3>
+
+                <p>
+                    Extrem prestanda med aggressiv design
+                    och racing-inspirerad teknik.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- C63 AMG -->
+        <div class="card">
+
+            <a href="C63 AMG.jpg"
+               data-lightbox="sports"
+               data-title="Mercedes C63 AMG">
+
+                <img src="C63 AMG.jpg" alt="Mercedes C63 AMG">
+            </a>
+
+            <div class="info">
+                <h3>C63 AMG</h3>
+
+                <p>
+                    Sportig sedan med kraftfull motor
+                    och ikoniskt AMG-ljud.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- CLA 45 AMG -->
+        <div class="card">
+
+            <a href="CLA 45 AMG.jpg"
+               data-lightbox="sports"
+               data-title="Mercedes CLA 45 AMG">
+
+                <img src="CLA 45 AMG.jpg" alt="Mercedes CLA 45 AMG">
+            </a>
+
+            <div class="info">
+                <h3>CLA 45 AMG</h3>
+
+                <p>
+                    Elegant coupe med hög prestanda
+                    och modern design.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tillbaka knapp -->
+    <a href="model.html" class="back-btn">Tillbaka</a>
+
+    <!-- Lightbox JS -->
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Animation -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 300,
+            'fadeDuration': 300,
+            'imageFadeDuration': 300,
+            'wrapAround': true
+        })
+    </script>
+
+</body>
+</html>
